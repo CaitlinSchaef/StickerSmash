@@ -44,3 +44,14 @@ Run:
 npx expo install react-native-gesture-handler react-native-reanimated
 
 -To get gesture interactions to work in the app, we'll render <GestureHandlerRootView> from react-native-gesture-handler to wrap the top-level component of our app (also known as the "root component").
+
+## Screen Shot
+Screenshot using a third-party library and save it on the device's media library. We'll use the following libraries react-native-view-shot that allows taking a screenshot, and expo-media-library that allows accessing a device's media library to save an image.
+
+Run:
+npx expo install react-native-view-shot expo-media-library
+
+
+## Permission
+expo-media-library provides a usePermissions() hook that gives the permission status, and a requestPermission() method to ask for access to the media library when permission is not granted.
+
