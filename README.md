@@ -54,4 +54,16 @@ npx expo install react-native-view-shot expo-media-library
 
 ## Permission
 expo-media-library provides a usePermissions() hook that gives the permission status, and a requestPermission() method to ask for access to the media library when permission is not granted.
+This is how we will save the edited photo.
+
+## Wanting it to work on the web too
+Android, iOS, and the web have different capabilities. In our case, both Android and iOS can capture a screenshot with the react-native-view-shot library, however, web browsers cannot.
+To capture a screenshot on the web and save it as an image , we'll use a third-party library called dom-to-image. It allows taking a screenshot of any DOM node and turning it into a vector (SVG) or raster (PNG or JPEG) image.
+
+Run:
+npm install dom-to-image
+
+
+## Status Bar
+The expo-status-bar library comes pre-installed in every project created using create-expo-app. This library provides a <StatusBar> component that allows configuring the app's status bar to change the text color, background color, make it translucent, and so on.
 
